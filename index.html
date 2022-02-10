@@ -3,25 +3,42 @@
     <head>
         <title>Portfolio Of Work</title>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
-        <h1>Portfolio Of Work</h1>
-        <p>In here will eventually go the body of my small projects.</p>
-        <ul>
-            <li>Web Based</li>
-                <ul>
-                    <li><a href="./projectpages/earlyretirement.html">Early Retirement Calculator</a></li>
-                </ul>
-            <li>C#</li>
-                <ul>
-                    <li><a href="./projectpages/autosplitters.html">Autosplitters for Turok and Turok 2</a></li>
-                </ul>
-            <li>JS and NodeJS</li>
-                <ul>
-                    <li><a href="./projectpages/jschatbot.html">IRC Chat Bot</a></li>
-                </ul>
-        </ul>
-        <p>In will go links to GitHub and <a href="./img/duck.jpeg" alt="A cute curious duck at my local park taken with an old FUJI FZ-2000 ZOOM analogue camera." style="text-decoration:none;">images</a> for reference.</p>
+        <h1 class="Headline">Portfolio Of Work</h1>
+        <div class="columns">
+            <div class="col">
+                <div class="card">
+                    <div class="card-title"> 
+                        <h3>Web Based</h3>
+                    </div>
+                    <a href="./projectpages/earlyretirement.html">Early Retirement Calculator</a>
+                    <img class="card-img" src="img/retirement.png" alt="A picture of a web form with several fields to input financial data to calculate a theoretical early retirement date.">
+                    <p class="caption">An early use of HTML, CSS, and JS. A one page form asking for some figures to calculate how early you could retire with several moderate assumptions.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-title">
+                        <h3>C#</h3>
+                    </div>
+                    <a href="./projectpages/autosplitters.html">Autosplitters for Turok and Turok 2</a>
+                    <img class="card-img" src="img/t2autosplitter.png" alt="An image showing C-sharp code intended for accurate timing of playing games quickly as a sport.">
+                    <p class="caption">Scripts for competitive speedgaming, they observe in-game variables in RAM and ask a program called LiveSplit to "split" when variables are changed. In this way a collection of splits are made within miliseconds of the action occuring in-game for hyper-accurate timing in an aggressive e-sport. Videos of Turok 2 speedrunners can be seen on speedrun.com, most of which will feature the autosplitter if recorded recently.</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <div class="card-title">
+                        <h3>JS and NodeJS</h3>
+                    </div>        
+                    <a href="./projectpages/jschatbot.html">IRC Chat Bot</a>
+                    <img class="card-img" src="img/jschatbot.png" alt="An image showing JavaScript code for a bot that responds to commands in a chat room on twitch.tv">
+                    <p class="caption">Quick chat bot for IRC on Twitch.tv, allowing a few commands to handle requests. I like my bots like I like my coffee, not in the morning.</p>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
